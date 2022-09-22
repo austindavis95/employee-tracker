@@ -27,7 +27,7 @@ VALUES ("Ross", "Perna", 1, ),
        ("Rickitty", "Cricket", , ),
        ("Ronald", "MacDonald", 4,1),
        ("Morrien", "Pondarosa", 2, 3),
-       ("Rob", "Justice", , ),
+       ("Rob", "Justice",4 ,2 ),
        ("Slippin", "Jimmy", , ),
        ("Les", "Claypool", , ),
        ("Syd", "Barret", 1, NULL);
