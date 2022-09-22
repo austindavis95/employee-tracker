@@ -1,36 +1,36 @@
 INSERT INTO department
   (name)
 VALUES
-  ('Marketing'),
-  ('Sales'),
-  ('Operations'),
-  ('Human Resources');
+  ('Grocery'),
+  ('Parishables'),
+  ('Deli'),
+  ('Butchery');
 
 INSERT INTO role
   (title, salary, department_id)
 VALUES
-  ('Marketing Director', '140000', '1'),
-  ('Marketing Assistant', '60000', '1'),
-  ('Sales Lead', '100000', '2'),
-  ('Salesperson', '80000', '2'),
-  ('Operations Manager', '60000', '3'),
-  ('Operations Assistant', '30000', '3'),
-  ('HR Manager', '60000', '4'),
-  ('HR Coordinator', '30000', '4');
+  ('Grocery Manager', '48000', '1'),
+  ('Grocery Assistant Manager', '37000', '1'),
+  ('Parshable Manager', '50000', '2'),
+  ('Parishable Lead', '42000', '2'),
+  ('Deli Manager', '30000', '3'),
+  ('Deli Assistant Manager', '26000', '3'),
+  ('Lead Butcher', '60000', '4'),
+  ('Butchers Assisstant', '44000', '4');
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Jimmy", "Fallon", 1, NULL),
-       ("Betty", "White", 2, 1),
-       ("Bob", "Ross", 3, 1),
-       ("Rick", "Sanchez", 4, NULL),
-       ("Britney", "Spears", 5, 4),
-       ("Michael", "Scott", 6, 4),
-       ("Johnny", "Cash", 7, NULL),
-       ("Sarah", "Paulson", 8, 7),
-       ("Dave", "Chapelle", 9, 7),
-       ("Cardi", "B", 10, NULL),
-       ("Bill", "Clinton", 11, 10),
-       ("Larry", "CableGuy", 12, 10);
+VALUES ("Ross", "Perna", 1, ),
+       ("Jason", "Lively", , ),
+       ("Nikki", "Potnik", , ),
+       ("Thomas", "Oregon", 2, NULL),
+       ("Bob", "Vance", , ),
+       ("Rickitty", "Cricket", , ),
+       ("Ronald", "MacDonald", 4,1),
+       ("Morrien", "Pondarosa", 2, 3),
+       ("Rob", "Justice", , ),
+       ("Slippin", "Jimmy", , ),
+       ("Les", "Claypool", , ),
+       ("Syd", "Barret", 1, NULL);
 
 
 
