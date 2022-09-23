@@ -19,16 +19,16 @@ VALUES
   ('Butchers Assisstant', '44000', '4');
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
-VALUES ("Ross", "Perna", 1, ),
+VALUES ("Ross", "Perna", 1,4 ),
        ("Jason", "Lively", , ),
        ("Nikki", "Potnik", , ),
        ("Thomas", "Oregon", 2, NULL),
-       ("Bob", "Vance", , ),
-       ("Rickitty", "Cricket", , ),
+       ("Bob", "Vance", 3,NULL ),
+       ("Rickitty", "Cricket",4,NULL ),
        ("Ronald", "MacDonald", 4,1),
        ("Morrien", "Pondarosa", 2, 3),
        ("Rob", "Justice",4 ,2 ),
-       ("Slippin", "Jimmy", , ),
+       ("Slippin", "Jimmy",3 ,1 ),
        ("Les", "Claypool", , ),
        ("Syd", "Barret", 1, NULL);
 
