@@ -20,8 +20,8 @@ VALUES
 
 INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES ("Ross", "Perna", 1,4 ),
-       ("Jason", "Lively", , ),
-       ("Nikki", "Potnik", , ),
+       ("Jason", "Lively",1 ,2 ),
+       ("Nikki", "Potnik",1 ,2 ),
        ("Thomas", "Oregon", 2, NULL),
        ("Bob", "Vance", 3,NULL ),
        ("Rickitty", "Cricket",4,NULL ),
@@ -29,7 +29,7 @@ VALUES ("Ross", "Perna", 1,4 ),
        ("Morrien", "Pondarosa", 2, 3),
        ("Rob", "Justice",4 ,2 ),
        ("Slippin", "Jimmy",3 ,1 ),
-       ("Les", "Claypool", , ),
+       ("Les", "Claypool",3 ,1 ),
        ("Syd", "Barret", 1, NULL);
 
 

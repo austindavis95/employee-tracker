@@ -2,6 +2,7 @@ const inquirer = require('inquirer');
 const mysql = require('mysql2');
 const db = require('./db/connection');
 
+
 require('console.table')
 
 const findEmployees = ()=>{
@@ -49,5 +50,38 @@ const findEmployees = ()=>{
         exitApp();
         }
     })
+
+
+
+    
 }
-findEmployees();
+
+const viewDepartments = () => {
+  const dataDept = "SELECT department.id, department.name FROM department;"
+  db.query(dataDept, (err, result)=>{
+    if (err) throw err;
+    console.table(result);
+    findEmployees()
+  })
+
+}
+
+const viewRoles = () => {
+  const dataDept = "SELECT role.id, role.title, role.salary FROM role;"
+  db.query(dataDept, (err, result)=>{
+    if (err) throw err;
+    console.table(result);
+    findEmployees()
+  })
+}
+
+const viewEmployee = () => {
+  const dataDept = "SELECT employee.id, employee.first_name, employee.last_name, employee.manager_id, employee.role_id FROM employee;"
+  db.query(dataDept, (err, result)=>{
+    if (err) throw err;
+    console.table(result);
+    findEmployees()
+  })
+}
+
+findEmployees()
