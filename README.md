@@ -18,6 +18,7 @@ SO THAT I can organize and plan my business
 
 ##Introduction
 
+Employee Tracker is an app built with SQL that allows buisness owners to easily orgainize their buisness. Employee tracker allows the user to view all employees, create new ones, and find employees by id. As well as view all deparments and creat new ones. It also allows the user to creat new roles for employees all in the SQL database!
 
 
 ##Acceptance Criteria
