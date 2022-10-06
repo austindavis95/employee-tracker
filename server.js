@@ -106,4 +106,5 @@ function createDepartment(department) {
   return db.promise().query("INSERT INTO department SET ?", department);
 }
 
+
 findEmployees()
