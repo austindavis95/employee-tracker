@@ -43,14 +43,17 @@ const findEmployees = ()=>{
       case 'add employee':
         addEmployee();
         break;
-      // case 'update employee role':
-      //   updEmpRole();
-      //   break;
-      default:
-        exitApp();
-        }
-    })
+      case 'update employee role':
+       updateEmpRole();
+         break;
+       case 'Quit':
+      quitApp();
+      break;
+  default:
+      break;
+    }
 
+  });
 
 
     
@@ -82,6 +85,25 @@ const viewEmployee = () => {
     console.table(result);
     findEmployees()
   })
+}
+
+function addDepartment() {
+  inquirer.prompt([
+    {
+      name: "name",
+      message: "What is the name of the department?"
+    }
+  ])
+    .then(res => {
+      let name = res;
+      createDepartment(name)
+        .then(() => console.log(`Added ${name.name} to the database`))
+        .then(() => startApp())
+    })
+}
+
+function createDepartment(department) {
+  return db.promise().query("INSERT INTO department SET ?", department);
 }
 
 findEmployees()
